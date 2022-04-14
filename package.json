@@ -1,6 +1,6 @@
 {
   "name": "setup-cloud-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "Setup Cloud CLI",
   "main": "lib/index.js",

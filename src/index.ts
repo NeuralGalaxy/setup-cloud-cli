@@ -50,6 +50,8 @@ async function run(): Promise<void> {
       AWS_US_REGION as string
     );
 
+    core.info(`Setup cloud cli: profile = ${profile}, region = ${region}`);
+
     switch (profile) {
       case 'aliyun':
       case 'aliyun-prod':

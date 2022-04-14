@@ -117,6 +117,9 @@ export function unsetAWSCredentials(): void {
   for (const key of awsCredentialsVars) {
     core.exportVariable(key, '');
   }
+
+  core.exportVariable('AWS_REGION', process.env.AWS_US_REGION);
+  core.exportVariable('AWS_DEFAULT_REGION', process.env.AWS_US_REGION);
 }
 
 function exportRegion(region: string): void {
